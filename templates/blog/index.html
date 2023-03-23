@@ -1,0 +1,255 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="fashion_section">
+  <div id="main_slider" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner">
+        <div class="carousel-item active">
+           <div class="container">
+              <h1 class="fashion_taital">Shirinliklar</h1>
+              <div class="fashion_section_2">
+                 <div class="row">
+                  
+                  {% for i in pechi %}
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="box_main">
+                       <h4 class="shirt_text">{{i.name}}</h4>
+                       <p class="price_text">Narxi <span style="color: #262626;">{{i.price}} so'm</span></p>
+                       <div class="tshirt_img"><img src="media/{{i.image}}"></div>
+                       <div class="btn_main">
+                          <div class="buy_bt"><a href="#">Sotib olish</a></div>
+                          <div class="seemore_bt"><a href="#"> Ma'lumot</a></div>
+                       </div>
+                    </div>
+                 </div>
+                  {% endfor %}
+                    
+
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="carousel-item">
+           <div class="container">
+              <h1 class="fashion_taital">Shirinliklar</h1>
+              <div class="fashion_section_2">
+                 <div class="row">
+                  
+                  {% for i in pechi2 %} 
+                    <div class="col-lg-4 col-sm-4">
+                       <div class="box_main">
+                          <h4 class="shirt_text">{{i.name}}</h4>
+                          <p class="price_text">Narxi  <span style="color: #262626;">{{i.price}} so'm</span></p>
+                          <div class="tshirt_img"><img src="media/{{i.image}}"></div>
+                          <div class="btn_main">
+                             <div class="buy_bt"><a href="#">Sotib olish</a></div>
+                             <div class="seemore_bt"><a href="#">Ma'lumot</a></div>
+                          </div>
+                       </div>
+                    </div>
+                    {% endfor %}
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="carousel-item">
+           <div class="container">
+              <h1 class="fashion_taital">Shirinliklar</h1>
+              <div class="fashion_section_2">
+                 <div class="row">
+                  
+                  {% for i in pechi3 %}
+ 
+                    <div class="col-lg-4 col-sm-4">
+                       <div class="box_main">
+                          <h4 class="shirt_text">{{i.name}}</h4>
+                          <p class="price_text">Narxi  <span style="color: #262626;">{{i.price}} so'm</span></p>
+                          <div class="tshirt_img"><img src="media/{{i.image}}"></div>
+                          <div class="btn_main">
+                             <div class="buy_bt"><a href="#">Sotib olish</a></div>
+                             <div class="seemore_bt"><a href="#">Ma'lumot</a></div>
+                          </div>
+                       </div>
+                    </div>
+                    {% endfor %}
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+     <i class="fa fa-angle-left"></i>
+     </a>
+     <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+     <i class="fa fa-angle-right"></i>
+     </a>
+  </div>
+</div>
+<!-- fashion section end -->
+<!-- electronic section start -->
+<div class="fashion_section">
+  <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner">
+        <div class="carousel-item active">
+           <div class="container">
+              <h1 class="fashion_taital">Elektronika</h1>
+              <div class="fashion_section_2">
+                 <div class="row">
+                     
+                     {% for i in elektronika %}
+                     <div class="col-lg-4 col-sm-4">
+                        <div class="box_main">
+                           <h4 class="shirt_text">{{i.name}}</h4>
+                           <p class="price_text">Narxi  <span style="color: #262626;">{{i.price}} so'm</span></p>
+                           <div class="electronic_img"><img src="media/{{i.image}}"></div>
+                           <div class="btn_main">
+                              <div class="buy_bt"><a href="#">Sotib olish</a></div>
+                              <div class="seemore_bt"><a href="#">Ma'lumot</a></div>
+                           </div>
+                        </div>
+                     </div>
+                     {% endfor %}
+                        
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="carousel-item">
+           <div class="container">
+              <h1 class="fashion_taital">Elektronika</h1>
+              <div class="fashion_section_2">
+                 <div class="row">
+                  {% for i in elektronika2 %}
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="box_main">
+                        <h4 class="shirt_text">{{i.name}}</h4>
+                        <p class="price_text">Narxi  <span style="color: #262626;">{{i.price}} so'm</span></p>
+                        <div class="electronic_img"><img src="media/{{i.image}}"></div>
+                        <div class="btn_main">
+                           <div class="buy_bt"><a href="#">Sotib olish</a></div>
+                           <div class="seemore_bt"><a href="#">Ma'lumot</a></div>
+                        </div>
+                     </div>
+                  </div>
+                  {% endfor %}
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="carousel-item">
+           <div class="container">
+              <h1 class="fashion_taital">Elektronika</h1>
+              <div class="fashion_section_2">
+                 <div class="row">
+                  {% for i in elektronika3 %}
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="box_main">
+                        <h4 class="shirt_text">{{i.name}}</h4>
+                        <p class="price_text">Narxi  <span style="color: #262626;">{{i.price}} so'm</span></p>
+                        <div class="electronic_img"><img src="media/{{i.image}}"></div>
+                        <div class="btn_main">
+                           <div class="buy_bt"><a href="#">Sotib olish</a></div>
+                           <div class="seemore_bt"><a href="#">Ma'lumot</a></div>
+                        </div>
+                     </div>
+                  </div>
+                  {% endfor %}
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">
+     <i class="fa fa-angle-left"></i>
+     </a>
+     <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
+     <i class="fa fa-angle-right"></i>
+     </a>
+  </div>
+</div>
+<!-- electronic section end -->
+<!-- jewellery  section start -->
+<div class="jewellery_section">
+  <div id="jewellery_main_slider" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner">
+        <div class="carousel-item active">
+           <div class="container">
+              <h1 class="fashion_taital">Sigaretalar</h1>
+              <div class="fashion_section_2">
+                 <div class="row">
+                  {% for i in sig %}
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="box_main">
+                        <h4 class="shirt_text">{{i.name}}</h4>
+                        <p class="price_text">Narxi  <span style="color: #262626;">{{i.price}} so'm</span></p>
+                        <div class="electronic_img"><img src="media/{{i.image}}"></div>
+                        <div class="btn_main">
+                           <div class="buy_bt"><a href="#">Sotib olish</a></div>
+                           <div class="seemore_bt"><a href="#">Ma'lumot</a></div>
+                        </div>
+                     </div>
+                  </div>
+                  {% endfor %}
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="carousel-item">
+           <div class="container">
+              <h1 class="fashion_taital">Sigaretalar</h1>
+              <div class="fashion_section_2">
+                 <div class="row">
+                  {% for i in sig2 %}
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="box_main">
+                        <h4 class="shirt_text">{{i.name}}</h4>
+                        <p class="price_text">Narxi  <span style="color: #262626;">{{i.price}} so'm</span></p>
+                        <div class="electronic_img"><img src="media/{{i.image}}"></div>
+                        <div class="btn_main">
+                           <div class="buy_bt"><a href="#">Sotib olish</a></div>
+                           <div class="seemore_bt"><a href="#">Ma'lumot</a></div>
+                        </div>
+                     </div>
+                  </div>
+                  {% endfor %}
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="carousel-item">
+           <div class="container">
+              <h1 class="fashion_taital">Sigaretalar</h1>
+              <div class="fashion_section_2">
+                 <div class="row">
+                  {% for i in sig3 %}
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="box_main">
+                        <h4 class="shirt_text">{{i.name}}</h4>
+                        <p class="price_text">Narxi  <span style="color: #262626;">{{i.price}} so'm</span></p>
+                        <div class="electronic_img"><img src="media/{{i.image}}"></div>
+                        <div class="btn_main">
+                           <div class="buy_bt"><a href="#">Sotib olish</a></div>
+                           <div class="seemore_bt"><a href="#">Ma'lumot</a></div>
+                        </div>
+                     </div>
+                  </div>
+                  {% endfor %}
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <a class="carousel-control-prev" href="#jewellery_main_slider" role="button" data-slide="prev">
+     <i class="fa fa-angle-left"></i>
+     </a>
+     <a class="carousel-control-next" href="#jewellery_main_slider" role="button" data-slide="next">
+     <i class="fa fa-angle-right"></i>
+     </a>
+     <div class="loader_main">
+        <div class="loader"></div>
+     </div>
+  </div>
+</div>
+{% endblock content %}
+  
