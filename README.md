@@ -1,0 +1,3 @@
+# Osiyo-market
+Kodni chopsang ko'tsan !
+Ko't bo'lma so'rab chop kodni ...
